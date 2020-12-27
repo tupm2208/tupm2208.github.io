@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.loading-animation {
+    background:red;
+    position:absolute;
+    width:100px;
+    height: 100px;
+}
+.hidden {
+    display:none;
+}
+
+.mat-dialog-container {
+    padding: 0!important;
+}
+html, body {
+    min-height: 100vh;
+}

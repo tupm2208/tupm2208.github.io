@@ -1,0 +1,14 @@
+<div class="post-preview">
+  <a>
+    <h2 class="post-title">
+      {{post?.title}}
+    </h2>
+    <h5 class="post-subtitle">
+      {{post?.subtitle}}&hellip;
+    </h5>
+  </a>
+  <p class="post-meta">Posted by
+    <a class="authorname-tag" [routerLink]='["/main/profile/",post?.authorID]'>{{post?.author?.name}}</a> on {{formatService.formatDate(post?.createdAt)}}</p>
+    <small class="category-tag"><a href="" [routerLink]='["/main/category/",post?.category?.ID]' [queryParams]="{topic: post?.category?.category}">{{post?.category?.category}}</a></small>
+</div>
+<hr>
